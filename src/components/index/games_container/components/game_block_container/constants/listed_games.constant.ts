@@ -102,7 +102,7 @@ export const ListedGamesConstant: Record<
     {
       name: "beach life",
       img_name: "beach-life",
-      category: "search",
+      category: "bingo",
     },
   ],
 
@@ -218,7 +218,7 @@ export const ListedGamesConstant: Record<
     {
       name: "big bad wolf",
       img_name: "big-bad-wolf",
-      category: "search",
+      category: "bingo",
     },
     {
       name: "sugar rush",
@@ -241,7 +241,7 @@ export const ListedGamesConstant: Record<
     {
       name: "beach life",
       img_name: "beach-life",
-      category: "search",
+      category: "bingo",
     },
   ],
 

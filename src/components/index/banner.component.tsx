@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { CommonImage } from "../common/common_image/common_image.component";
+import Image from "next/image";
 
 const images = ["banner-1.png", "banner-2.png", "banner-3.png"];
 
@@ -95,16 +96,16 @@ function CarouselImage(_props: { type: "first" | "backdrop"; index: number }) {
   }, [_props.index]);
 
   return (
-    <>
-      <div
-        className={`${
-          _props.type == "first"
-            ? `z-10 ${animClass} opacity-0`
-            : "z-0 opacity-100"
-        } bg-[url('/png/${
-          currentImage ?? images[images.length - 1]
-        }')] rounded-lg bg-no-repeat bg-cover absolute top-0 left-0 w-full h-full`}
-      />
-    </>
+    <Image
+      width={1000}
+      height={600}
+      alt="carrousel"
+      src={`/png/${currentImage ?? images[images.length - 1]}`}
+      className={`${
+        _props.type == "first"
+          ? `z-10 ${animClass} opacity-0`
+          : "z-0 opacity-100"
+      } bg-no-repeat bg-cover absolute top-0 left-0 w-full h-full object-cover`}
+    />
   );
 }
