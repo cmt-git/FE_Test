@@ -44,7 +44,7 @@ export function CategoryTab() {
   //region: --- Return
   return (
     <>
-      <div className="max-w-full h-fit bg-white pl-2 sticky top-[50px] flex-none flex items-center justify-evenly">
+      <div className="z-[51] max-w-full h-fit bg-white pl-2 sticky top-[50px] flex-none flex items-center justify-evenly">
         <CategoryTabContainer
           type={"search"}
           key={0}
