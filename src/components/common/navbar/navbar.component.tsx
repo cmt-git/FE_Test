@@ -13,7 +13,7 @@ export function Navbar() {
 
   //region: --- Return
   return (
-    <div className="h-[50px] w-full sticky top-0 flex justify-between px-2 shadow-md bg-white">
+    <div className="z-50 h-[50px] w-full sticky top-0 flex justify-between px-2 shadow-md bg-white">
       <div className="flex-1 flex items-center justify-start gap-1">
         <button className={common_button_class}>
           <CommonImage className="h-4 w-4" type="svg" fileName="menu" />
