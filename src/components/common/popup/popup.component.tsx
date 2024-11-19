@@ -27,7 +27,7 @@ export function Popup() {
         show
           ? "bg-black/50 pointer-events-auto"
           : "bg-black/0 pointer-events-none"
-      } w-screen fixed top-0 left-0 overflow-y-auto overflow-x-hidden transition-all duration-[${duration}ms] ease-in h-screen max-h-screen opacity-100 z-50`}
+      } w-screen fixed top-0 left-0 overflow-y-auto overflow-x-hidden transition-all duration-[${duration}ms] ease-in h-screen max-h-screen opacity-100 z-[99]`}
     >
       {" "}
       <div
